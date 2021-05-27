@@ -41,7 +41,7 @@ h1 {
 .left {
   width: 75%;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   flex-direction: column;
 }
@@ -51,6 +51,20 @@ h1 {
   width: 100%;
   justify-content: space-around;
   align-items: center;
+  padding: 40px 40px;
+}
+
+.social {
+  display: flex;
+  height: 60px;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 28px;
+}
+
+.social-icon {
+  height: 100%;
+  margin: 0 15px;
 }
 
 .image-container {
