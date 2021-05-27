@@ -1,35 +1,86 @@
+@font-face {
+  font-family: "Akrobat";
+  src: url('./fonts/Akrobat-Regular.woff2') format('woff2'),
+       url('./fonts/Akrobat-Regular.woff') format('woff'),
+       url('./fonts/Akrobat-Regular.ttf') format('truetype');
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Akrobat";
+  src: url('./fonts/Akrobat-Black.woff2') format('woff2'),
+       url('./fonts/Akrobat-Black.woff') format('woff'),
+       url('./fonts/Akrobat-Black.ttf') format('truetype');
+  font-weight: bold;
+}
+
 * {
+  box-sizing: border-box;
   margin: 0;
+  padding: 0;
+  font-family: 'Akrobat', Akrobat, sans-serif;
+  font-weight: normal;
+  --main-color: #b71833;
+}
+
+h1 {
+  text-align: center;
+  font-size: 72px;
+}
+
+.bold {
+  font-weight: bold;
 }
 
 .container {
   width: 100vw;
   height: 100vh;
   display: flex;
-  background: #000;
 }
 
-.main {
+.left {
   width: 75%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+}
+
+.socials {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.image-container {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
 }
 
 .image {
-  height: 80%;
+  object-fit: cover;
+  width: 100%;
 }
 
 .right {
   width: 25%;
-  background: #FF0000;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
+  border-left: 25px solid var(--main-color);
 }
 
-.first {
-  height: 50%;
-  background: green;
+.box {
+  height: 100%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
 }
 
-.second {
-  height: 50%;
-  background-color: yellow;
+.logo {
+  width: 100%;
 }
